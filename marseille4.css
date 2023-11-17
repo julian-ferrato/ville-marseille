@@ -1,0 +1,50 @@
+/* Ajout de styles pour la section des parcs */
+.parcs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.parc {
+    width: 45%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.parc img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px #888888;
+    transition: transform 0.3s ease-in-out;
+}
+
+.parc img:hover {
+    transform: scale(1.1);
+}
+
+main {
+    text-align: center; /* Centre le contenu dans la section principale */
+}
+
+h2 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #333;
+}
+.parc p {
+    font-size: 16px; /* Taille de la police */
+    line-height: 1.5; /* Hauteur de ligne */
+    color: #555; /* Couleur du texte */
+    margin-bottom: 15px; /* Espace en bas du paragraphe */
+}
+.parc h3 {
+    font-size: 20px;
+    color: #D90020;
+    margin-bottom: 10px;
+}

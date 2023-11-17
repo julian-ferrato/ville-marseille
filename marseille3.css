@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative; /* Ajoutez cette ligne pour que le pseudo-élément soit positionné par rapport au body */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/plageX.jpg') center/cover fixed no-repeat; /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin de votre image */
+    filter: blur(5px); /* Ajustez la valeur de flou selon vos préférences */
+    z-index: -1; /* Assurez-vous que le pseudo-élément est positionné en arrière-plan */
+}
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+h2 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #333;
+}
+/* Ajoutez la classe plage-container pour styliser la section plage */
+.plage-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Style des éléments individuels de plage */
+.plage {
+    width: 45%; /* Ajustez la largeur des plages selon vos préférences */
+    margin-bottom: 20px; /* Espace entre les plages */
+}
+
+.plage h3 {
+    font-size: 20px;
+    color: #D90020;
+    margin-bottom: 10px;
+}
+
+.plage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #888888;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ajoutez une animation de zoom sur les images au survol */
+.plage img:hover {
+    transform: scale(1.1);
+}
+
+.plage p {
+    font-size: 16px; /* Taille de la police */
+    line-height: 1.5; /* Hauteur de ligne */
+    color: #555; /* Couleur du texte */
+    margin-bottom: 15px; /* Espace en bas du paragraphe */
+}
+
+
