@@ -1,0 +1,51 @@
+
+
+  
+
+
+
+.ph{
+    transition: tranform 0.3s ease-in-out;
+    margin: 20px;
+    height: 300px;
+    width:700px ;
+    
+    
+
+}
+.ph:hover{
+    transform: scale(1.1);
+}
+.musées{
+    text-align: center;
+    margin: 50px;
+}
+
+body{
+    background: url(image/back1.jpg);
+    background-attachment: fixed;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card {
+    margin-top: 5%;
+    box-shadow: 0 4px 8px 0 rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+  }
+
+
+.card:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+  
+
+.container {
+    padding: 2px 16px;}
+   
